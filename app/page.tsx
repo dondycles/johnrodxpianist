@@ -22,14 +22,37 @@ export default function Home() {
             players.
           </p>
           <ButtonGroup variant="shadow" color="primary">
-            <Button
-              as={Link}
-              href="https://mymusicsheet.com/johnroddondoyano"
-              target="_blank"
-              className="font-semibold text-white text-xs"
-            >
-              BUY PIANO SHEETS
-            </Button>
+            <Dropdown>
+              <DropdownTrigger>
+                <Button className="font-semibold text-white text-xs">
+                  BUY SHEETS/MIDI
+                </Button>
+              </DropdownTrigger>
+
+              <DropdownMenu color="primary" variant="shadow">
+                <DropdownItem
+                  as={Link}
+                  href="https://mymusicsheet.com/johnroddondoyano"
+                  target="_blank"
+                  key="pianosheets"
+                  className="text-xl"
+                >
+                  <span className="text-xs font-semibold">PIANO SHEETS</span>
+                </DropdownItem>
+                <DropdownItem
+                  as={Link}
+                  href="https://payhip.com/johnroddondoyano"
+                  target="_blank"
+                  key="midis"
+                  className="text-xl"
+                >
+                  <span className="text-xs font-semibold">
+                    PIANO MIDIS & STRINGS
+                  </span>
+                </DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+
             <Dropdown>
               <DropdownTrigger>
                 <Button className="font-semibold text-white text-xs">
@@ -40,7 +63,7 @@ export default function Home() {
                 <DropdownItem
                   as={Link}
                   href="https://youtube.com/johnroddondoyano"
-                  target="_parent"
+                  target="_blank"
                   key="youtube"
                   className="text-xl"
                   startContent={<FaYoutube />}
@@ -50,7 +73,7 @@ export default function Home() {
                 <DropdownItem
                   as={Link}
                   href="https://open.spotify.com/artist/2opN2BRNgnBJIO932Kyr3U?si=3yH2nrluRqqFP1qOzM2TcA"
-                  target="_parent"
+                  target="_blank"
                   key="spotify"
                   className="text-xl"
                   startContent={<FaSpotify />}
@@ -60,7 +83,7 @@ export default function Home() {
                 <DropdownItem
                   as={Link}
                   href="https://music.apple.com/us/artist/john-rod-dondoyano/1716913960"
-                  target="_parent"
+                  target="_blank"
                   key="applemusic"
                   className="text-xl"
                   startContent={<FaApple />}
@@ -70,7 +93,7 @@ export default function Home() {
                 <DropdownItem
                   as={Link}
                   href="https://www.tiktok.com/@dondycles"
-                  target="_parent"
+                  target="_blank"
                   key="tktok"
                   className="text-xl"
                   startContent={<FaTiktok />}

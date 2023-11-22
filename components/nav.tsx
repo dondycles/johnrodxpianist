@@ -24,9 +24,12 @@ export default function Nav() {
         variant="shadow"
         className="text-white"
       >
-        <Button className="font-semibold text-xs">HOME</Button>
-        <Button className="font-semibold text-xs ">BIO</Button>
-        <Button className="font-semibold text-xs ">LINKS</Button>
+        <Button as={Link} href="/" className="font-semibold text-xs">
+          HOME
+        </Button>
+        <Button as={Link} href="/bio" className="font-semibold text-xs ">
+          BIO
+        </Button>
         <Button
           isIconOnly
           onClick={() =>
