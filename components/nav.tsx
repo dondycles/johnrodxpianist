@@ -13,7 +13,7 @@ export default function Nav() {
     <nav className="flex w-full p-4 justify-between border-b-1 border-b-foreground/10">
       <Link href={"/"}>
         <Image
-          className={`${theme.theme === "light" && "invert"} w-[64px] h-auto`}
+          className={`${theme.theme === "light" && "invert"} w-[48px] h-auto`}
           src={logo}
           alt="John Rod Dondoyano"
         />
