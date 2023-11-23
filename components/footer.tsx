@@ -7,8 +7,9 @@ export default function Footer() {
     <footer className="w-full  bg-foreground/5 mb-0 mt-auto p-4 flex flex-col gap-4">
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-4">
         <div className="flex flex-col gap-1 sm:mx-auto">
-          <p className="font-semibold text-primary">SOCIALS</p>
-          <Divider />
+          <p className="font-semibold text-primary sm:border-b-[1px] sm:border-b-primary/50">
+            SOCIALS
+          </p>
           <Link
             className="text-xs"
             href="https://facebook.com/dondycles"
@@ -35,8 +36,9 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col gap-1 sm:mx-auto">
-          <p className="font-semibold text-primary">BUY</p>
-          <Divider />
+          <p className="font-semibold text-primary  sm:border-b-[1px] sm:border-b-primary/50">
+            BUY
+          </p>
           <Link
             className="text-xs"
             href="https://mymusicsheet.com/johnroddondoyano"
@@ -55,8 +57,9 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col gap-1 sm:mx-auto">
-          <p className="font-semibold text-primary">LISTEN/WATCH</p>
-          <Divider />{" "}
+          <p className="font-semibold text-primary  sm:border-b-[1px] sm:border-b-primary/50">
+            LISTEN/WATCH
+          </p>
           <Link
             className="text-xs"
             href="https://open.spotify.com/artist/2opN2BRNgnBJIO932Kyr3U?si=3yH2nrluRqqFP1qOzM2TcA"

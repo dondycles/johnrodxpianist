@@ -22,6 +22,7 @@ export default function Nav() {
         size="md"
         color="primary"
         variant="shadow"
+        radius="full"
         className="text-white"
       >
         <Button as={Link} href="/" className="font-semibold text-xs">

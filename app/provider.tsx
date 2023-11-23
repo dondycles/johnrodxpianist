@@ -23,12 +23,12 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   if (hydrated)
     return (
       <NextUIProvider
-        className={`max-h-[100dvh] h-screen w-full relative bg-background text-foreground overflow-hidden text-sm sm:text-base flex flex-col ${
+        className={`max-h-[100dvh] h-screen w-full relative bg-background text-foreground text-sm sm:text-base flex flex-col ${
           montserrat.className
         } ${theme.theme === "dark" ? "dark" : "light"}`}
       >
         <Nav />
-        <main className="flex flex-col w-full max-h-full h-screen overflow-y-auto overflow-x-hidden">
+        <main className="flex flex-col w-full max-h-full h-screen overflow-auto">
           {children}
           <Footer />
         </main>

@@ -14,14 +14,14 @@ import Link from "next/link";
 import { FaApple, FaSpotify, FaTiktok, FaYoutube } from "react-icons/fa";
 export default function Home() {
   return (
-    <div className="max-h-full h-full w-full p-4 flex flex-col items-center justify-center gap-2">
-      <div className="flex flex-row flex-wrap-reverse justify-center items-center gap-2">
+    <div className="h-full w-full p-4">
+      <div className="h-full w-full flex flex-row flex-wrap-reverse justify-center items-center gap-2 ">
         <div className="flex flex-col gap-2">
           <p className="text-center font-semibold max-w-[300px]">
             Piano covers that are playable by beginners up to intermediate piano
             players.
           </p>
-          <ButtonGroup variant="shadow" color="primary">
+          <ButtonGroup variant="shadow" color="primary" radius="full">
             <Dropdown>
               <DropdownTrigger>
                 <Button className="font-semibold text-white text-xs">
