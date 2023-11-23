@@ -28,7 +28,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
         } ${theme.theme === "dark" ? "dark" : "light"}`}
       >
         <Nav />
-        <main className="flex flex-col w-full max-h-full h-screen overflow-auto">
+        <main className="flex flex-col w-full max-h-full h-screen overflow-y-auto overflow-x-hidden">
           {children}
           <Footer />
         </main>

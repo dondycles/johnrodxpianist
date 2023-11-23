@@ -18,14 +18,14 @@ const config: Config = {
             primary: "#cea490",
             secondary: "#38bdf8",
             background: "#efefef",
-            foreground: "#000000",
+            foreground: "#0d0d0d",
           },
         },
         dark: {
           colors: {
             primary: "#cea490",
             secondary: "#38bdf8",
-            background: "#000000",
+            background: "#0d0d0d",
             foreground: "#efefef",
           },
         },
