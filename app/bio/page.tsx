@@ -2,7 +2,7 @@
 export default function Bio() {
   return (
     <div className="max-h-full h-full w-full p-4 ">
-      <article className="max-w-[500px]">
+      <article className="max-w-[500px] mx-auto">
         <p className="font-semibold text-primary">Biography</p>
         <br />
         <p className="indent-4">
