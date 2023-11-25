@@ -14,7 +14,7 @@ import Link from "next/link";
 import { FaApple, FaSpotify, FaTiktok, FaYoutube } from "react-icons/fa";
 export default function Home() {
   return (
-    <div className=" min-h-fit w-full flex flex-row flex-wrap-reverse justify-center items-center gap-2 p-4">
+    <div className=" min-h-fitw-full flex flex-row flex-wrap-reverse justify-center items-center gap-2 p-4 m-auto">
       <div className="flex flex-col gap-2">
         <p className="text-center font-semibold max-w-[300px]">
           Piano covers that are playable by beginners up to intermediate piano
