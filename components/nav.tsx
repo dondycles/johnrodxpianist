@@ -3,7 +3,7 @@
 import { Avatar, Button, ButtonGroup, NextUIProvider } from "@nextui-org/react";
 import logo from "@/public/logo.webp";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@nextui-org/react";
 import { useTheme } from "@/store";
 import { FaMoon, FaLightbulb } from "react-icons/fa";
 
@@ -11,13 +11,21 @@ export default function Nav() {
   const theme = useTheme();
   return (
     <nav className="flex w-full p-4 justify-between border-b-1 border-b-foreground/10">
-      <Link href={"/"}>
+      <Button
+        radius="full"
+        size="md"
+        variant="shadow"
+        color="primary"
+        as={Link}
+        href={"/"}
+        isIconOnly
+      >
         <Image
-          className={`${theme.theme === "light" && "invert"} w-[48px] h-auto`}
+          className={`h-full w-auto `}
           src={logo}
           alt="John Rod Dondoyano"
         />
-      </Link>
+      </Button>
       <ButtonGroup
         size="md"
         color="primary"

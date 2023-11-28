@@ -8,10 +8,7 @@ import { useTheme } from "@/store";
 import { useEffect, useState } from "react";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["200", "400", "600", "900"],
-});
+import { montserrat } from "@/utils/fonts";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   const theme = useTheme();
