@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="w-full  bg-foreground/5 mb-0 mt-auto p-4 flex flex-col gap-4">
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-y-4">
-        <div className="flex flex-col gap-1 sm:mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="flex flex-col gap-1 lg:mx-auto">
           <p className="font-semibold text-primary sm:border-b-[1px] sm:border-b-primary/50">
             SOCIALS
           </p>
@@ -35,7 +35,7 @@ export default function Footer() {
             YouTube
           </Link>
         </div>
-        <div className="flex flex-col gap-1 sm:mx-auto">
+        <div className="flex flex-col gap-1 lg:mx-auto">
           <p className="font-semibold text-primary  sm:border-b-[1px] sm:border-b-primary/50">
             BUY
           </p>
@@ -56,7 +56,7 @@ export default function Footer() {
             Piano MIDIs & Strings
           </Link>
         </div>
-        <div className="flex flex-col gap-1 sm:mx-auto">
+        <div className="flex flex-col gap-1 lg:mx-auto">
           <p className="font-semibold text-primary  sm:border-b-[1px] sm:border-b-primary/50">
             LISTEN/WATCH
           </p>
@@ -91,6 +91,19 @@ export default function Footer() {
             color="foreground"
           >
             TikTok
+          </Link>
+        </div>
+        <div className="flex flex-col gap-1 lg:mx-auto">
+          <p className="font-semibold text-primary sm:border-b-[1px] sm:border-b-primary/50">
+            INQUIRIES?
+          </p>
+          <Link
+            className="text-xs"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=johnroddondoyano@gmail.com"
+            target="_blank"
+            color="foreground"
+          >
+            johnroddondoyano8@gmail.com
           </Link>
         </div>
       </div>
