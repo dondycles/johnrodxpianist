@@ -39,6 +39,9 @@ export default function Nav() {
         <Button as={Link} href="/bio" className="font-semibold text-xs ">
           BIO
         </Button>
+        <Button as={Link} href="/course" className="font-semibold text-xs ">
+          COURSE
+        </Button>
         <Button
           isIconOnly
           onClick={() =>
