@@ -99,11 +99,11 @@ export default function Footer() {
           </p>
           <Link
             className="text-xs"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=johnroddondoyano@gmail.com"
+            href="mailto&#58;johnroddondoyano8&#64;gmail&#46;com"
             target="_blank"
             color="foreground"
           >
-            johnroddondoyano8@gmail.com
+            Email
           </Link>
         </div>
       </div>
