@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="flex flex-col gap-1 lg:mx-auto">
           <p className="font-semibold text-primary sm:border-b-[1px] sm:border-b-primary/50">
-            SOCIALS
+            LET'S CONNECT!
           </p>
           <Link
             className="text-xs"
@@ -28,11 +28,19 @@ export default function Footer() {
           </Link>
           <Link
             className="text-xs"
-            href="https://youtube.com/johnroddondoyano"
+            href="https://tiktok.com/@dondycles"
             target="_blank"
             color="foreground"
           >
-            YouTube
+            TikTok
+          </Link>
+          <Link
+            className="text-xs"
+            href="https://x.com/dondycles"
+            target="_blank"
+            color="foreground"
+          >
+            X
           </Link>
         </div>
         <div className="flex flex-col gap-1 lg:mx-auto">
