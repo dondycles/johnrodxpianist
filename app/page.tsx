@@ -21,7 +21,12 @@ export default function Home() {
           Piano covers that are playable by beginners up to intermediate piano
           players.
         </p>
-        <ButtonGroup variant="shadow" color="primary" radius="full">
+        <ButtonGroup
+          variant="solid"
+          color="primary"
+          radius="full"
+          className=" drop-shadow-md"
+        >
           <Dropdown>
             <DropdownTrigger>
               <Button className="font-semibold text-white text-xs">
@@ -31,7 +36,7 @@ export default function Home() {
 
             <DropdownMenu
               color="primary"
-              variant="shadow"
+              variant="solid"
               className={montserrat.className}
             >
               <DropdownItem
@@ -39,7 +44,7 @@ export default function Home() {
                 href="https://mymusicsheet.com/johnroddondoyano"
                 target="_blank"
                 key="pianosheets"
-                className="text-xl hover:text-white"
+                className="text-xl hover:text-white  drop-shadow-md"
               >
                 <span className="text-xs font-semibold">PIANO SHEETS</span>
               </DropdownItem>
@@ -48,7 +53,7 @@ export default function Home() {
                 href="https://payhip.com/johnroddondoyano"
                 target="_blank"
                 key="midis"
-                className="text-xl hover:text-white"
+                className="text-xl hover:text-white  drop-shadow-md"
               >
                 <span className="text-xs font-semibold">
                   PIANO MIDIS & STRINGS
@@ -65,7 +70,7 @@ export default function Home() {
             </DropdownTrigger>
             <DropdownMenu
               color="primary"
-              variant="shadow"
+              variant="solid"
               className={montserrat.className}
             >
               <DropdownItem
@@ -73,7 +78,7 @@ export default function Home() {
                 href="https://youtube.com/johnroddondoyano"
                 target="_blank"
                 key="youtube"
-                className="text-xl hover:text-white"
+                className="text-xl hover:text-white drop-shadow-md"
                 startContent={<FaYoutube />}
               >
                 <span className="text-xs font-semibold">YOUTUBE</span>
@@ -83,7 +88,7 @@ export default function Home() {
                 href="https://open.spotify.com/artist/2opN2BRNgnBJIO932Kyr3U?si=3yH2nrluRqqFP1qOzM2TcA"
                 target="_blank"
                 key="spotify"
-                className="text-xl hover:text-white"
+                className="text-xl hover:text-white   drop-shadow-md"
                 startContent={<FaSpotify />}
               >
                 <span className="text-xs font-semibold">SPOTIFY</span>
@@ -93,20 +98,20 @@ export default function Home() {
                 href="https://music.apple.com/us/artist/john-rod-dondoyano/1716913960"
                 target="_blank"
                 key="applemusic"
-                className="text-xl hover:text-white"
+                className="text-xl hover:text-white drop-shadow-md"
                 startContent={<FaApple />}
               >
-                <span className="text-xs font-semibold">APPLE MUSIC</span>
+                <span className="text-xs font-semibold ">APPLE MUSIC</span>
               </DropdownItem>
               <DropdownItem
                 as={Link}
                 href="https://www.tiktok.com/@dondycles"
                 target="_blank"
                 key="tktok"
-                className="text-xl hover:text-white"
+                className="text-xl hover:text-white drop-shadow-md"
                 startContent={<FaTiktok />}
               >
-                <span className="text-xs font-semibold">TIKTOK</span>
+                <span className="text-xs font-semibold  ">TIKTOK</span>
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -116,7 +121,7 @@ export default function Home() {
         src={transparent}
         alt="John Rod Dondoyano"
         priority
-        className="w-64 h-64 rounded-full shrink-0 drop-shadow"
+        className="w-64 h-64 rounded-full shrink-0 drop-solid"
       />
     </div>
   );

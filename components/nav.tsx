@@ -10,11 +10,11 @@ import { FaMoon, FaLightbulb } from "react-icons/fa";
 export default function Nav() {
   const theme = useTheme();
   return (
-    <nav className="flex w-full p-4 justify-between border-b-1 border-b-foreground/10">
+    <nav className="flex w-full p-4 justify-between border-b-1 border-b-foreground/10 drop-shadow-md">
       <Button
         radius="full"
         size="md"
-        variant="shadow"
+        variant="solid"
         color="primary"
         as={Link}
         href={"/"}
@@ -29,7 +29,7 @@ export default function Nav() {
       <ButtonGroup
         size="md"
         color="primary"
-        variant="shadow"
+        variant="solid"
         radius="full"
         className="text-white"
       >
